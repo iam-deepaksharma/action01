@@ -1,1 +1,11 @@
+name: tomcat
 
+on: push
+
+jobs:
+  job1:
+  - name: job
+    run-on: ubuntu-latest
+    steps:
+    - name: step1
+      uses: ubuntu
