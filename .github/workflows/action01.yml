@@ -3,11 +3,15 @@ name: action01
 on: push
 
 jobs:
-  ubuntu:
+  job1:
     runs-on: ubuntu-latest
     steps:
-    - run: date
-  windows:
+    - name: checkout repository
+      uses: actions/checkout@v4
+
+    - name: print date
+      run: date
+  job2:
    runs-on: windows-latest
    steps:
    - run: date
